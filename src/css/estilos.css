@@ -1,0 +1,232 @@
+body{
+    background-image: url(../imagens/fundo-site.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    font-family:'Rubik', monospace;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px;
+
+}
+
+.cartao{
+    background-color: #070d12;
+    width: 370px;
+    border: 2px solid #e126d9;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(225, 38, 217, 0.6);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.cartao:hover {
+    box-shadow: 0 12px 30px rgba(225, 38, 217, 0.9);
+}
+
+
+.abas img{
+    width: 30px;
+}
+
+
+
+
+.cartao .minhas-informacoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza todo o conteúdo */
+}
+
+.cartao .minhas-informacoes img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top center; /* Garante que o rosto fique centralizado e visível */
+    border: 4px solid #75ebc6;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.cartao .minhas-informacoes .nome{
+    font-size: 26px;
+}
+
+.cartao .minhas-informacoes .cargo{
+    font-size: 20px;
+    color: #b8bbc5;
+}
+
+.cartao .conteudo{
+    
+    margin-top: 15px;
+
+}
+ 
+.cartao .abas{
+    display: flex;
+}
+
+.cartao .abas .aba{
+    width:  50%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.cartao .abas img{
+    width: 30px;
+}
+
+.cargo .abas .aba.selecionado{
+    background-color: #262626;
+}
+
+.cartao .informacoes-abas{
+    background-color: #262626;
+
+}
+
+.cartao .abas .aba:hover{
+    background-color: #414141;
+}
+
+.informacoes-abas .informacao{
+    min-height: 260px;
+    padding: 15px;
+    display: none;
+}
+
+.informacoes-abas .informacao.selecionado{
+    display: block;
+
+}
+
+.informacoes-abas .sub-titulo{
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+
+.cartao h1, .cartao h2 {
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.informacoes-abas .descricao p {
+    word-spacing: 3px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.informacoes-abas .descricao span {
+    letter-spacing: 1px;
+}
+
+
+.informacoes-abas .descricao{
+    font-size: 20px;
+    max-height: 180px;
+    overflow-y:auto;
+    padding-right: 15px;
+
+}
+
+.informacoes-abas .descricao span{
+    color: #02d08f;
+}
+
+.redes-sociais{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    max-height: 180px;
+    overflow-y: auto;
+}
+
+.redes-sociais li a{
+    
+    width: 250px;
+    display: block;
+    color: #f3f3f3;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.redes-sociais li a:hover{
+    opacity: 0.8;
+ }
+
+.redes-sociais .curriculo{
+    background-color: #06c185;
+
+}
+ .redes-sociais .linkedin {
+    background-color: #1d87bd;
+ }
+
+ .redes-sociais .site-pessoal{
+    background-color: #6c6c6c;
+ }
+ 
+ .redes-sociais .github{
+    background-color:#414141 ;
+ }
+
+ /* Ajuste do tamanho do cartão */
+.cartao {
+    max-width: 800px; /* Permite que o cartão ocupe mais espaço */
+    width: 90%; /* Responsivo para telas menores */
+    padding: 20px; /* Adiciona espaçamento interno */
+}
+
+/* Ajuste do espaçamento entre os textos */
+.informacoes-abas .descricao p {
+    word-spacing: 4px; /* Aumenta o espaçamento entre palavras */
+    line-height: 1.8; /* Melhora a legibilidade */
+    margin-bottom: 20px; /* Espaçamento entre parágrafos */
+}
+
+/* Ajuste do layout das redes sociais */
+.redes-sociais {
+    gap: 20px; /* Reduz o espaçamento entre os itens */
+}
+
+.redes-sociais li a {
+    font-size: 18px; /* Ajusta o tamanho da fonte */
+    padding: 12px; /* Adiciona mais espaçamento interno */
+}
+
+/* Estilo para as palavras-chave */
+.palavra-chave {
+    color: #02d08f;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-decoration: underline;
+}
+
+.palavra-chave:hover {
+    color: #e126d9;
+    text-shadow: 0 0 10px rgba(225, 38, 217, 0.8);
+    transform: scale(1.1);
+}
+
+/* Ajuste do espaçamento entre os parágrafos */
+.informacoes-abas .descricao p  {
+
+    word-spacing: 4px;
+    line-height: 1.8;
+    margin-bottom: 25px; /* Espaçamento maior entre os parágrafos */
+}
